@@ -6,7 +6,7 @@ phases:
       - echo "Connecting to ECR"
       - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/n4j8z6s4
       - docker build -t flask-hello-world .
-      - echo "Container build successfully"
+      - echo "Container build Successfully"
       - docker tag flask-hello-world:latest public.ecr.aws/n4j8z6s4/flask-hello-world:latest
       - docker push public.ecr.aws/n4j8z6s4/flask-hello-world:latest
       - echo "Container Successfully pushed to ECR"
