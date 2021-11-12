@@ -9,4 +9,4 @@ phases:
       - echo "Container build successfully"
       - docker tag flask-hello-world:latest 298495439718.dkr.ecr.ap-south-1.amazonaws.com/flask-hello-world:latest
       - docker push 298495439718.dkr.ecr.ap-south-1.amazonaws.com/flask-hello-world:latest
-      - echo "Container successfully pushed to ecr"
+      - echo "Container successfully pushed to ECR"
