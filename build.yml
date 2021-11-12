@@ -10,3 +10,7 @@ phases:
       - docker tag flask-hello-world:latest public.ecr.aws/n4j8z6s4/flask-hello-world:latest
       - docker push public.ecr.aws/n4j8z6s4/flask-hello-world:latest
       - echo "Container Successfully pushed to ECR"
+      
+artifacts:
+    files:
+        - imagedefinitions.json
